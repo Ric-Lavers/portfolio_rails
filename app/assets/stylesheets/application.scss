@@ -1,0 +1,259 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+ *{
+   font-family: 'Poppins', sans-serif;
+ }
+ .opening{
+ }
+ .menu{
+   overflow: visible;
+ }
+ .opening img{
+   height:80%;
+   position:absolute;
+   right:-150px;
+   top:0px;
+   z-index: 0;
+   overflow: hidden;
+   filter: grayscale(100%);
+   transition: all .5s ease-in;
+ }
+ .opening:hover img{
+   filter: grayscale(0%);
+ }
+ .my-sections:first-child{
+   margin-top: -3px;
+ }
+ .bg-black{
+   background-color: black;
+   color: white;
+   border-color: black;
+ }
+ .my-button{
+   width:100%;
+   margin-bottom:4px;
+   cursor:pointer;
+ }
+ .my-button.focus{
+   padding-right:150%;
+   z-index: -1;
+   box-shadow: 0 0 0 3px black;
+   cursor:pointer;
+   position: sticky;
+ }
+ .btn.focus, .btn:focus {
+     outline: 0;
+     box-shadow: 0 0 0 3px black;
+ }
+ .contact-button{
+   width:100%;
+   margin-bottom:4px;
+   cursor:pointer;
+ }
+ .contact-button:focus, .contact-button.focus{
+   padding-bottom:350%;
+ }
+ .my-sections img{
+   width: 60px;
+   height: 60px;
+   padding: 6px;
+   display:none;
+ }
+ .my-sections.open-para img{
+   display:inline;
+ }
+ section p{
+   height: 0;
+   opacity: 0;
+
+ }
+ .main-feature{
+   height: 60vh;
+ }
+
+ .my-sections.open-para p {
+   height: auto;
+   opacity: 1;
+ }
+ .my-sections p{
+   margin-bottom: 0;
+ }
+
+ .my-sections.open-para{
+   border-width: 1;
+   z-index: 3000;
+   padding-left: 1em;
+   padding-right: 1em;
+   padding-top:12px;
+   padding-bottom:7%;
+   background-color: black;
+   color: white;
+   border-radius: 8px;
+   -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+   clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0 100%);
+ }
+ .footer h2{
+   text-align: center;
+   color: #FF7700;
+   width: 100%;
+   height: 60px;
+   background-color: white;
+ }
+ /*section:first-child{
+   -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0 100%);
+   clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0 100%);
+ }
+ section:nth-child(even){
+   background-color: white;
+   color: black;
+   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+ }*/
+
+ /*SVG STUFF*/
+
+ .static{
+   overflow:visible;
+   width:60%;
+   height:60%;
+   margin:12px;
+   stroke-dasharray: 4612;
+   stroke-dashoffset: 4612;
+ }
+  .unmotion{
+    overflow:visible;
+    width:60%;
+    height:60%;
+    margin:12px;
+    /* animation   */
+    stroke-dasharray: 4612;
+    stroke-dashoffset: 4612;
+    animation: pash 1.5s linear forwards;
+  }
+   @keyframes pash {
+     5% {
+       stroke-dashoffset: 0;
+     }
+     100% {
+       stroke-dashoffset: 4612;
+     }
+   }
+
+ #Layer_3{
+   overflow:visible;
+   width:100%;
+   height:100%;
+   margin:0px;
+
+ }
+ .motion{
+   overflow:visible;
+   width:60%;
+   height:60%;
+   margin:12px;
+ /* animation   */
+   stroke-dasharray: 4612;
+   stroke-dashoffset: 4612;
+   animation: dash 4s linear forwards;
+ }
+ @keyframes dash {
+   5% {
+     stroke-dashoffset: 4612;
+   }
+   100% {
+     stroke-dashoffset: 0;
+   }
+ }
+ .red{background-color: red;}
+ .blue{background-color: blue;}
+
+ .my-input{
+   height:40px;
+   width:396px;
+   font-size:20px;
+   border:0px;
+   background-color:rgba(0, 0, 0, 0.1);
+
+ }
+ #message-input{
+   height:168px;
+ }
+
+ .text{
+   opacity:0;
+   font-size:42;
+
+ }
+ .text-title{
+   animation: appear 4s linear forwards;
+ }
+ @keyframes appear {
+   0%{
+     opacity:0;
+   }
+   25%{
+     opacity:0;
+   }
+   50%{}
+   100%{
+     opacity:1;
+   }
+ }
+
+ .text1{opacity:0; animation: appear1 4s linear forwards;}
+ @keyframes appear1 {
+   0%{
+     opacity:0;
+   }
+   35%{opacity:0}
+   50%{opacity:1}
+   100%{
+     opacity:1;
+   }
+ }
+ .text2{opacity:0; animation: appear2 4s linear forwards;}
+ @keyframes appear2 {
+   0%{
+     opacity:0;
+   }
+   60%{opacity:0}
+   75%{opacity:1}
+   100%{
+     opacity:1;
+   }
+ }
+ .text3{opacity:0; animation: appear3 4s linear forwards;}
+ @keyframes appear3 {
+   0%{
+     opacity:0;
+   }
+   85%{opacity:0}
+   100%{opacity:1}
+   100%{
+     opacity:1;
+   }
+ }
+ .text4{opacity:0; animation: appear4 5s linear forwards;}
+ @keyframes appear4 {
+   0%{
+     opacity:0;
+   }
+   90%{opacity:0}
+   100%{opacity:1}
+ }
