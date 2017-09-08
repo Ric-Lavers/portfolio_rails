@@ -44,11 +44,15 @@ $(document).ready(function(){
   });
 });
 
+$( window ).resize(function() {
+  var h = $(document).height();
+  console.log("Page height is " + h);
+});
 
 //draw Contact Box on scroll
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    console.log(scroll);
+    console.log("scroll is " + scroll);
     if (scroll >= 450) {
       $('#Layer_3').removeClass('static').addClass('motion');
       $('#text_1').addClass('text1');

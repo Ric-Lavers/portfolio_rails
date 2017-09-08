@@ -20,14 +20,27 @@
    font-family: 'Poppins', sans-serif;
  }
  .opening{
+   background-color: #ccc;
  }
  .menu{
    overflow: visible;
  }
+ @media only screen and (max-width: 500px) {
+     body {
+         background-color: #add8e6;
+         transition: background-color 2s ease;
+     }
+ }
+ @media only screen and (min-width: 501px) {
+     body {
+         background-color: #62a7bd;
+         transition: background-color 2s ease;
+     }
+ }
  .opening img{
    height:80%;
    position:absolute;
-   right:-150px;
+   right:0px;
    top:0px;
    z-index: 0;
    overflow: hidden;
@@ -84,12 +97,13 @@
 
  }
  .main-feature{
-   height: 60vh;
+   min-height: 60vh;
  }
 
  .my-sections.open-para p {
    height: auto;
    opacity: 1;
+   padding-bottom: 32px;
  }
  .my-sections p{
    margin-bottom: 0;
