@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+$paper : #F4F4F4;
+$silk  : #DCD0C0;
+$paleGold : #C0B283;
+$charcoal: #373737;
 
  @import url('https://fonts.googleapis.com/css?family=Poppins');
 
@@ -20,9 +24,23 @@
    font-family: 'Poppins', sans-serif;
  }
  .opening{
-   background-color: #ccc;
+   background-color: $paleGold;
    min-height: 40vh;
  }
+.opening .icon{
+  height: 50px;
+  width: 50px;
+  margin: 4px;
+  position:static;
+  display:inline-block;
+  left:0px;
+  top:0px;
+  filter: grayscale(0%);
+
+}
+body{
+  background-color: $paper;
+}
  .menu{
    overflow: visible;
  }
@@ -31,6 +49,15 @@
  @media only screen and (max-width: 576px) {
      body {
          transition: background-color 2s ease;
+     }
+     .my-icons{
+       margin-top: -16px;
+       margin-left: 16px;
+
+     }
+     .opening .icon{
+       height:40px ;
+       width:40px ;
      }
      .opening img{
        height:55%;
@@ -63,6 +90,10 @@
  @media only screen and (min-width: 576px) {
      body {
          transition: background-color 2s ease;
+     }
+     .my-icons{
+       margin-top: -32px;
+       margin-left: 32px;
      }
      .opening img{
        height:80%;

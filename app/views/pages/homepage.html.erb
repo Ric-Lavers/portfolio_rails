@@ -1,14 +1,22 @@
 
     <div class="jumbotron jumbotron-fluid opening">
+      <div class="my-icons">
+        <a href="https://github.com/ric-lavers">  <%= image_tag "Logos/GitHub-Mark.svg", class:"icon"%></a>
+        <a href="https://twitter.com/Ric_lavers"><%= image_tag "Logos/twitter.svg", class:"icon"%></a>
+        <a href="https://soundcloud.com/aeonknight"><%= image_tag "Logos/soundcloud.svg", class:"icon"%></a>
+        <a href="https://linkedin.com/ric-lavers"><%= image_tag "Logos/linkedin.svg", class:"icon"%></a>
+
+      </div>
       <div class="container hello">
 
-         <%= image_tag "DP-noBG.png"%>
+
+        <%= image_tag "DP-noBG.png", id:"face"%>
         <!-- <img src="images/DP-noBG.png" alt=""> -->
         <h1 class="display-3">Ric Lavers</h1>
         <p class="lead">&emsp;&emsp;Technology<br />&emsp;&emsp;&emsp;&emsp;&emsp;Business <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Sociology</p>
+
       </div>
     </div>
-
     <div class="container-fluid">
       <div class="row main-feature">
         <div class="col-3 menu"><!--  sidebar-->
@@ -17,6 +25,7 @@
           <div id="btn-three" class="sticky-top btn bg-black my-button">skills</div>
           <a id="go" href="#Layer_3"><div id="btn-contact" class="sticky-top btn bg-black">contact</div></a>
         </div>
+
         <div class="col-9" id="main-bit">
           <section id="about" class="my-sections">
             <p>"I'm a full stack Junior developer based in Sydney, Australia. <br> <br> When I'm not writing code I might be planning a Event, making some music, or reading sci-fi.<br /><br>  My road to get to development has taken me through 2 degrees, 3 businesses, and a heap of stories but with development I think I've found something I like."</p>

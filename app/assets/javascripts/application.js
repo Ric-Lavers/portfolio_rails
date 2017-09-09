@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
 
+
   function removeFocus() {
     $('.menu .btn').each( function(){
       var $this = $(this);
@@ -29,6 +30,15 @@ $(document).ready(function(){
      }, 100);
   });
 });
+
+
+window.addEventListener('load', function() {
+document.querySelector('#btn-contact').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#Layer_3').scrollIntoView({ behavior: 'smooth' });
+      });
+});
+
 
 // $( window ).resize(function() {
 //   var h = $(document).height();
