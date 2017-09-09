@@ -21,24 +21,61 @@
  }
  .opening{
    background-color: #ccc;
+   min-height: 40vh;
  }
  .menu{
    overflow: visible;
  }
- @media only screen and (max-width: 500px) {
+
+//iPhone 6
+ @media only screen and (max-width: 576px) {
      body {
-         background-color: #add8e6;
          transition: background-color 2s ease;
      }
+     .opening img{
+       height:55%;
+       transition: height .2s ease;
+     }
+     .display-3 {
+      font-size: 2.5rem;
+     }
+     .lead{
+       font-size:1rem;
+     }
+     .btn{
+       font-size: .7rem;
+     }
+     .my-sections{
+      font-size: .8rem;
+     }
+     .my-sections img{
+       width: 45px;
+       height: 45px;
+       padding: 4px;
+       display:none;
+     }
+     #main-bit{
+       padding-left: 0px;
+     }
+
  }
- @media only screen and (min-width: 501px) {
+
+ @media only screen and (min-width: 576px) {
      body {
-         background-color: #62a7bd;
          transition: background-color 2s ease;
+     }
+     .opening img{
+       height:80%;
+     }
+     .my-sections img{
+       width: 60px;
+       height: 60px;
+       padding: 6px;
+       display:none;
      }
  }
  .opening img{
-   height:80%;
+  //  height:80%;
    position:absolute;
    right:0px;
    top:0px;
@@ -58,10 +95,17 @@
    color: white;
    border-color: black;
  }
+ #btn-contact{
+   width:100%;
+   margin-bottom:4px;
+   cursor:pointer;
+   padding-left: .25rem;
+ }
  .my-button{
    width:100%;
    margin-bottom:4px;
    cursor:pointer;
+   padding-left: .25rem;
  }
  .my-button.focus{
    padding-right:150%;
@@ -70,6 +114,7 @@
    cursor:pointer;
    position: sticky;
  }
+
  .btn.focus, .btn:focus {
      outline: 0;
      box-shadow: 0 0 0 3px black;
@@ -82,12 +127,7 @@
  .contact-button:focus, .contact-button.focus{
    padding-bottom:350%;
  }
- .my-sections img{
-   width: 60px;
-   height: 60px;
-   padding: 6px;
-   display:none;
- }
+
  .my-sections.open-para img{
    display:inline;
  }
