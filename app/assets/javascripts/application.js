@@ -2,7 +2,6 @@
 
 $(document).ready(function(){
 
-
   function removeFocus() {
     $('.menu .btn').each( function(){
       var $this = $(this);
@@ -32,6 +31,7 @@ $(document).ready(function(){
 });
 
 
+
 window.addEventListener('load', function() {
 document.querySelector('#btn-contact').addEventListener('click', function(e) {
         e.preventDefault();
@@ -55,16 +55,21 @@ document.querySelector('#btn-contact').addEventListener('click', function(e) {
   // point.y = 20;
   // var polyline= document.getElementById('Layer_3');
   // polyline.points.appendItem(point);
-// $( window ).resize(function() {
-//   var top = $("#btn-contact").offset().top + window.screenY;
-//   var left = $("#btn-contact").offset().left + window.screenX;
-//   var width = $("#btn-contact").width();
-//   var height = $("#btn-contact").height();
-//
-//   var middleX = left + (width/2);
-//   var middleY = top + height;
-//
-//   // console.log("top: " + top + "| left: " + left + "| width: " + width + "| X: " + middleX + "| Y: " + middleY);
+$( window ).resize(function() {
+var w =$(document).width();
+
+var right = $("#btn-contact").offset().right ;
+var left = $("#btn-contact").offset().left ;
+console.log("left |" + left +" right |"+ right);
+var width = $("#btn-contact").width();
+console.log("width" + width);
+var middleX =(width/2) +5;
+console.log("margin-left" + middleX);
+
+$("#Layer_3").css("margin-left", middleX);
+});
+
+
 
 $(".main-feature .menu a[href^='#']").on('click', function(e) {
    // prevent default anchor click behavior

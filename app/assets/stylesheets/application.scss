@@ -45,66 +45,6 @@ body{
    overflow: visible;
  }
 
-//iPhone 6
- @media only screen and (max-width: 576px) {
-     body {
-         transition: background-color 2s ease;
-     }
-     .my-icons{
-       margin-top: -16px;
-       margin-left: 16px;
-
-     }
-     .opening .icon{
-       height:40px ;
-       width:40px ;
-     }
-     .opening img{
-       height:55%;
-       transition: height .2s ease;
-     }
-     .display-3 {
-      font-size: 2.5rem;
-     }
-     .lead{
-       font-size:1rem;
-     }
-     .btn{
-       font-size: .7rem;
-     }
-     .my-sections{
-      font-size: .8rem;
-     }
-     .my-sections img{
-       width: 45px;
-       height: 45px;
-       padding: 4px;
-       display:none;
-     }
-     #main-bit{
-       padding-left: 0px;
-     }
-
- }
-
- @media only screen and (min-width: 576px) {
-     body {
-         transition: background-color 2s ease;
-     }
-     .my-icons{
-       margin-top: -32px;
-       margin-left: 32px;
-     }
-     .opening img{
-       height:80%;
-     }
-     .my-sections img{
-       width: 60px;
-       height: 60px;
-       padding: 6px;
-       display:none;
-     }
- }
  .opening img{
   //  height:80%;
    position:absolute;
@@ -242,8 +182,8 @@ body{
 
  #Layer_3{
    overflow:visible;
-   width:100%;
-   height:100%;
+   width:90%;
+   height:90%;
    margin:0px;
 
  }
@@ -267,7 +207,19 @@ body{
  }
  .red{background-color: red;}
  .blue{background-color: blue;}
-
+ .my-icons{
+   margin-top: -32px;
+   margin-left: 32px;
+ }
+ .opening img{
+   height:80%;
+ }
+ .my-sections img{
+   width: 60px;
+   height: 60px;
+   padding: 6px;
+   display:none;
+ }
  .my-input{
    height:40px;
    width:396px;
@@ -342,3 +294,85 @@ body{
    90%{opacity:0}
    100%{opacity:1}
  }
+
+ //desktop
+ @media (min-width:1200px) {
+   #Layer_3{
+     width:90%;
+     height: 90%;
+     margin-top: 125px;
+    //  margin-left: 45px;
+   }
+ }
+ @media (min-width:1000px) {
+   #Layer_3{
+     width:90%;
+     height: 90%;
+     margin-top: 100px;
+    //  margin-left: 40px;
+   }
+ }
+ @media (min-width:800px) {
+   #Layer_3{
+     margin-top: 40px;
+   }
+ }
+@media only screen and (max-width: 390px) {
+  #Layer_3{
+    margin-top: -150px;
+    // margin-left: 30px;
+  }
+}
+ //iPhone 6
+  @media only screen and (max-width: 576px) {
+      body {
+          transition: background-color 2s ease;
+      }
+      #Layer_3{
+        margin-top: -50px;
+        margin-left: -8px;
+
+
+      }
+      .my-icons{
+        margin-top: -16px;
+        margin-left: 16px;
+        z-index: 3;
+        background-color: #F4F4F4;
+
+      }
+      .opening .icon{
+        height:40px ;
+        width:40px ;
+      }
+      .opening img{
+        height:55%;
+        transition: height .2s ease;
+      }
+      .display-3 {
+       font-size: 2.5rem;
+      }
+      .lead{
+        font-size:1rem;
+      }
+      .btn{
+        font-size: .7rem;
+      }
+      .my-sections{
+       font-size: .8rem;
+      }
+      .my-sections img{
+        width: 45px;
+        height: 45px;
+        padding: 4px;
+        display:none;
+      }
+      #main-bit{
+        padding-left: 0px;
+      }
+
+  }
+
+  @media only screen and (min-width: 577px) {
+
+  }
