@@ -46,7 +46,6 @@ body{
  }
 
  .opening img{
-  //  height:80%;
    position:absolute;
    right:0px;
    top:0px;
@@ -54,6 +53,9 @@ body{
    overflow: hidden;
    filter: grayscale(100%);
    transition: all .5s ease-in;
+ }
+ #face{
+   height: 60%;
  }
  .opening:hover img{
    filter: grayscale(0%);
@@ -158,8 +160,8 @@ body{
    width:60%;
    height:60%;
    margin:12px;
-   stroke-dasharray: 4612;
-   stroke-dashoffset: 4612;
+   stroke-dasharray: 4831;
+   stroke-dashoffset: 4831;
  }
   .unmotion{
     overflow:visible;
@@ -167,8 +169,8 @@ body{
     height:60%;
     margin:12px;
     /* animation   */
-    stroke-dasharray: 4612;
-    stroke-dashoffset: 4612;
+    stroke-dasharray: 4831;
+    stroke-dashoffset: 4831;
     animation: pash 1.5s linear forwards;
   }
    @keyframes pash {
@@ -176,7 +178,7 @@ body{
        stroke-dashoffset: 0;
      }
      100% {
-       stroke-dashoffset: 4612;
+       stroke-dashoffset: 4831;
      }
    }
 
@@ -187,19 +189,35 @@ body{
    margin:0px;
 
  }
+ .send-button{
+  width: 101px;
+  height: 50px;
+  font-size: 29px;
+  background-color:transparent;
+  border: 0px;
+  // opacity:0;
+  animation: appear5 5s linear forwards;
+}
+.send-button:active{
+  background-color:rgba(222,222,222,.5);
+  border: 1px;
+  z-index:-1000;
+}
+
+
  .motion{
    overflow:visible;
    width:60%;
    height:60%;
    margin:12px;
  /* animation   */
-   stroke-dasharray: 4612;
-   stroke-dashoffset: 4612;
+   stroke-dasharray: 4831;
+   stroke-dashoffset: 4831;
    animation: dash 4s linear forwards;
  }
  @keyframes dash {
    5% {
-     stroke-dashoffset: 4612;
+     stroke-dashoffset: 4831;
    }
    100% {
      stroke-dashoffset: 0;
@@ -233,7 +251,7 @@ body{
  }
 
  .text{
-   opacity:0;
+  //  opacity:0;
    font-size:42;
 
  }
@@ -295,6 +313,7 @@ body{
    100%{opacity:1}
  }
 
+
  //desktop
  @media (min-width:1200px) {
    #Layer_3{
@@ -312,9 +331,12 @@ body{
     //  margin-left: 40px;
    }
  }
- @media (min-width:800px) {
+ @media (max-width:800px) {
    #Layer_3{
      margin-top: 40px;
+   }
+   #face{
+     height:50%;
    }
  }
 @media only screen and (max-width: 390px) {
@@ -331,15 +353,14 @@ body{
       #Layer_3{
         margin-top: -50px;
         margin-left: -8px;
-
-
+      }
+      #face{
+        height:45%;
       }
       .my-icons{
         margin-top: -16px;
         margin-left: 16px;
         z-index: 3;
-        background-color: #F4F4F4;
-
       }
       .opening .icon{
         height:40px ;
