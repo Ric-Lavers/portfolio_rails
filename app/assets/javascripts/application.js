@@ -1,8 +1,3 @@
-$(document).ready(function(){
-var myPath = document.getElementById("word");
-var length = myPath.getTotalLength();
-console.log(length);
-});
 
 $(document).ready(function(){
 
@@ -64,11 +59,11 @@ var w =$(document).width();
 
 var right = $("#btn-contact").offset().right ;
 var left = $("#btn-contact").offset().left ;
-console.log("left |" + left +" right |"+ right);
+// console.log("left |" + left +" right |"+ right);
 var width = $("#btn-contact").width();
-console.log("width" + width);
+// console.log("width" + width);
 var middleX =(width/2) +5;
-console.log("margin-left" + middleX);
+// console.log("margin-left" + middleX);
 
 $("#Layer_3").css("margin-left", middleX);
 });
@@ -77,7 +72,7 @@ $("#Layer_3").css("margin-left", middleX);
 
 $(".main-feature .menu a[href^='#']").on('click', function(e) {
    // prevent default anchor click behavior
-   console.log("MY MAN");
+  //  console.log("MY MAN");
    e.preventDefault();
    $('#btn-contact').removeClass('focus');
    // store hash

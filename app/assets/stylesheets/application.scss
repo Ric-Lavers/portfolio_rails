@@ -104,7 +104,7 @@ body{
  .my-sections.open-para img{
    display:inline;
  }
- section p{
+ .my-sections p{
    height: 0;
    opacity: 0;
 
@@ -141,6 +141,7 @@ body{
    width: 100%;
    height: 60px;
    background-color: white;
+   margin-bottom: 40px;
  }
  /*section:first-child{
    -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0 100%);
@@ -184,8 +185,8 @@ body{
 
  #Layer_3{
    overflow:visible;
-   width:90%;
-   height:90%;
+   width:80%;
+   height: 80%;
    margin:0px;
 
  }
@@ -317,16 +318,14 @@ body{
  //desktop
  @media (min-width:1200px) {
    #Layer_3{
-     width:90%;
-     height: 90%;
+
      margin-top: 125px;
     //  margin-left: 45px;
    }
  }
  @media (min-width:1000px) {
    #Layer_3{
-     width:90%;
-     height: 90%;
+
      margin-top: 100px;
     //  margin-left: 40px;
    }
@@ -334,14 +333,17 @@ body{
  @media (max-width:800px) {
    #Layer_3{
      margin-top: 40px;
+
    }
    #face{
-     height:50%;
+     height:55%;
    }
  }
 @media only screen and (max-width: 390px) {
   #Layer_3{
     margin-top: -150px;
+    width:90%;
+    height: 90%;
     // margin-left: 30px;
   }
 }
@@ -351,8 +353,10 @@ body{
           transition: background-color 2s ease;
       }
       #Layer_3{
-        margin-top: -50px;
+        margin-top: -90px;
         margin-left: -8px;
+        width:90%;
+        height: 90%;
       }
       #face{
         height:45%;
